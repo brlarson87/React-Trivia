@@ -1,0 +1,13 @@
+.spinner-container {
+  @include flexCenter;
+  min-height: 100vh;
+
+  &__spinner {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid 10px #fff;
+    border-left-color: transparent;
+    animation: spin 1s forwards infinite;
+  }
+}

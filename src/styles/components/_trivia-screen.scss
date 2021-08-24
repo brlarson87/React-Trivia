@@ -1,0 +1,73 @@
+.trivia-screen {
+  @include flexContainer;
+  justify-content: space-between;
+
+  .question-container {
+    width: 90%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+
+    .category {
+      margin-top: 2vh;
+      margin-bottom: 7vh;
+      text-align: center;
+      font-size: 18px;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      @media only screen and (min-width: 325px) {
+        font-size: 22px;
+      }
+    }
+
+    .question {
+      display: flex;
+      align-items: center;
+      border: solid 2px #222;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      height: 50vh;
+      padding: 0 5vw;
+      margin-bottom: 2vh;
+      line-height: 1.5;
+      font-size: 20px;
+      overflow: hidden;
+      word-break: break-word;
+
+      @media only screen and (min-width: 450px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .index {
+    text-align: center;
+    margin-top: -5vh;
+  }
+
+  .btn-container {
+    display: flex;
+
+    .btn {
+      font-size: 20px;
+      text-transform: uppercase;
+      width: 110px;
+      padding: 5px 0;
+      cursor: pointer;
+
+      @media only screen and (min-width: 325px) {
+        font-size: 24px;
+        width: 140px;
+      }
+
+      &:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}

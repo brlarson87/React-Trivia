@@ -1,0 +1,10 @@
+@import "./base/base";
+@import "./base/mixins";
+@import "./base/animations";
+@import "./base/utils";
+
+@import "./components/start-sreen";
+@import "./components/trivia-screen";
+@import "./components/results-screen";
+@import "./components/spinner";
+@import "./components/error-screen";
